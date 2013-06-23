@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Melody - by molovo</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Favicons
+  ================================================== -->
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<script type="text/javascript" src="//use.typekit.net/daj1asl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body>
+	<div class="container">
+
+		<header class="grid 1of1" id="top">
+			<a href="http://github.com/molovo/dateme" class="button">View on Github</a>
+
+			<h3>DateMe</h3>
+			<p>Simple, non-invasive JavaScript date sanitisation.</p>
+		</header>
+
+		<section class="grid 2of3 content">
+			<p>
+				The date is validated on blur, and converted into DD/MM/YYYY format from an array of accepted inputs.
+			</p>
+
+			<form action="#">
+				<p>Try it out now.</p>
+				<label for="edDate">Date:</label>
+				<input type="text" class="dateMe" />
+			</form>
+
+			<p>
+				If the date is valid, the field is updated. If not, a class of <code>error</code> is applied to the input.
+			</p>
+
+			<p>
+				To implement, call the script on your page, and apply a class of <code>dateMe</code> to each input element you want validated. Simples
+			</p>
+
+			<pre><code>
+&lt;input type="text" class="dateMe" /&gt;
+&lt;script src="js/dateme.min.js"&gt;&lt;/script&gt;
+			</code></pre>
+		</section>
+
+		<section class="grid 1of3 additional">
+			<p>
+				Accepted input formats:
+				<ul>
+					<li><small>DDMMYY</small></li>
+					<li><small>DDMMYYYY</small></li>
+					<li><small>D/M/YY</small></li>
+					<li><small>D/M/YYYY</small></li>
+					<li><small>DD/MM/YY</small></li>
+					<li><small>DD/MM/YYYY</small></li>
+					<li><small>D-M-YY</small></li>
+					<li><small>D-M-YYYY</small></li>
+					<li><small>DD-MM-YY</small></li>
+					<li><small>DD-MM-YYYY</small></li>
+					<li><small>D.M.YY</small></li>
+					<li><small>D.M.YYYY</small></li>
+					<li><small>DD.MM.YY</small></li>
+					<li><small>DD.MM.YYYY</small></li>
+				</ul>
+			</p>
+		</section>
+
+		<footer class="grid 1of1" id="bottom">
+			<p class="center">
+				<small>A small thing by <a href="http://molovo.co.uk">molovo</a>.</small>
+			</p>
+		</footer>
+
+	</div>
+
+	<script>//var dateFormat = 'MM/DD/YYYY';</script>
+	<script src="js/dateme.min.js"></script>
+</body>
+</html>

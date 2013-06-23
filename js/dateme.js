@@ -24,14 +24,14 @@
 			return false;
 		}
 
+		// Replace dashes and dots with slashes for consistency
+		enteredDate = enteredDate.replace(/[-|.]/g, '/');
+
 		// If enteredDate is only a number, add slashes at the correct points
 		if ( enteredDate == parseFloat(enteredDate) ) {
 			enteredDate = enteredDate.replace(/(\S{2})/g,"$1/");
 			enteredDate = enteredDate.replace(/\/$/,"");   // removes the final slash
 		}
-
-		// Replace dashes and dots with slashes for consistency
-		enteredDate = enteredDate.replace(/[-|.]/g, '/');
 
 		// Remove third slash if four digit year is entered
 		if ( enteredDate.lastIndexOf("/") > 6 ) {
